@@ -1,0 +1,76 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+#logo{
+    margin: 15px;
+}
+
+#topImg {
+    max-width: 400px;
+}
+
+.top {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+#quizWindow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    background-image: url('Quizapp/brainbg.jpg');
+    background-size: 180%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#myList {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#sideBarContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(161, 156, 156, 0.37);
+    justify-content: space-between;
+    padding: 20px 0 0 0;
+}
+
+#questions {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.quizContainerBig {
+    display: flex;
+    border: solid rgba(0, 0, 0, 0.185) 1px;
+    border-radius: 7px;
+    min-width: 300px;
+    min-height: 300px;
+}
+
+@media screen and (max-width: 450px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #topImg {
+        max-width: 350px;
+    }
+}
